@@ -1,27 +1,39 @@
-<div class="gallery">
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>動画ページ</title>
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
 
-  <p><a href="https://find1225.github.io/img1.png" target="_blank">
-    https://find1225.github.io/img1.png
-  </a></p>
+    .video-wrapper {
+      width: 100%;
+      max-width: 900px;
+      padding: 16px;
+      box-sizing: border-box;
+    }
 
-  <p><a href="https://find1225.github.io/img2.png" target="_blank">
-    https://find1225.github.io/img2.png
-  </a></p>
-
-  <p><a href="https://find1225.github.io/img3.png" target="_blank">
-    https://find1225.github.io/img3.png
-  </a></p>
-
-  <p><a href="https://find1225.github.io/img4.png" target="_blank">
-    https://find1225.github.io/img4.png
-  </a></p>
-
-  <p><a href="https://find1225.github.io/img5.png" target="_blank">
-    https://find1225.github.io/img5.png
-  </a></p>
-
-  <p><a href="https://find1225.github.io/img6.png" target="_blank">
-    https://find1225.github.io/img6.png
-  </a></p>
-
-</div>
+    video {
+      width: 100%;
+      display: block;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="video-wrapper">
+    <video controls>
+      <source src="nano.mp4" type="video/mp4">
+      お使いのブラウザは動画再生に対応していません。
+    </video>
+  </div>
+</body>
+</html>
